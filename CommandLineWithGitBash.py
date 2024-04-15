@@ -28,6 +28,16 @@
 
 
 
+def greatest(a,b):
+ if a>b:
+  return a
+ else:
+  return b
+
+print(greatest(34,55
+
+
+
 
 
  #mv -- to rename a file : to remve a file name we have to type "rm current_file and new_file"
