@@ -116,3 +116,14 @@ print(type(z))
 
 import random
 print(random.randrange(1,19))
+
+
+
+
+# Python Casting
+
+# int() - constructs an integer number from an integer literal, a float literal or a string literal
+
+# float() -constructs a float number froman integer literal, a float literal or a string literal
+
+# str() - constructs a string from a wide variety of data types, including strings, bytes, bytearrays, lists, tuples, and dictionaries
