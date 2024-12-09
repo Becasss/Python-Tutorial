@@ -33,4 +33,86 @@ print(type(d)) # Output: 'range'
 
 e = {"name": "Bikash", "age": 26}
 print(e)
-print(type(e)) # output : dict
+print(type(e)) # output : 'dict'
+
+
+f = {"apple", "banana", "cherry"}
+print(f)
+print(type(f))  # Output : 'set'
+
+
+g = frozenset({"apple", "banana", "cherery"})
+print(g)
+print(type(g)) # output : 'frozenset'
+
+h = True
+print(h)
+print(type(h)) # output : 'bool'
+
+
+i = b"Hello, world!"
+print(i)
+print(type(i)) # output : 'byte'
+
+j = bytes(5)
+print(type(j)) # output : 'bytearray'
+
+k = memoryview(bytes(5))
+print(type(k)) # output : 'memoryview'
+
+l = None
+print(type(l)) # output : 'None'
+
+
+
+
+
+# Python Numbers
+
+# Int : Int, or integer, is a whole number, + or -, without decimals, of unlimited length.
+
+x = 10
+print(type(x)) # output : 'int'
+
+# Float : Float, or floating point number is a number, + or -, containing one or more decimals.
+
+x = 1.1
+
+print(type(x)) # output : 'float'
+
+y = 34e3
+print(y)
+print(type(y)) # output : 'float'
+
+
+# Complex: Complex numbers are written with a "j" as the imaginary part:
+
+x = 3+5j
+print(type(x)) # output : 'complex'
+
+
+# Type Conversion
+
+# Convert from int to float:
+x = float(1)
+
+# Convert from float to int:
+y = int(2.23)
+
+# Convert from int to complex:
+z = complex(1)
+
+print(x)
+print(y)
+print(z)
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+
+# Random Number: don't have a random() function to make a random number but has a built-in module called random
+# that can be used to generate random numbers:
+
+import random
+print(random.randrange(1,19))
