@@ -121,6 +121,46 @@ l = "Python is awesome"
 print(l) # Output: Python is awesome
 
 
-c = "Python"
+c = "Python "
 d = "is awesome"
 print(c, d) # Output: Python is awesome
+print(c + d) # Output:Python is awesome
+
+
+
+# Python Global Variables : Variables that are created outside of a function are knows as global variables.
+
+#Example 1:
+
+u = "python"
+
+def myfunc():
+    print("Here we learn " + u)
+
+myfunc()
+
+
+# Example 2:
+
+v = "python"
+
+def myFunc():
+    v = "Bikash"
+    print("Here we learn " + v)
+myFunc()
+
+print("Here we learn " + v)
+
+# Note: When we create a variable inside a function, that variable is local, and can be used only inside that function.
+
+# The Global Variables
+
+#Example 3:
+
+def myfnc():
+    global z
+    z = "Python is awesome"
+    print("Here we learn " + z)
+myfnc()
+
+print("Outside the function" + z)
