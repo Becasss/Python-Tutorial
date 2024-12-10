@@ -88,5 +88,52 @@ print(d.strip()) # Output : Hello, BIkash Yamphu Rai
 
 # Replace String - replace() method
 
-print(d.replace("H", "A"))
+print(d.replace("H", "A"))  # Output : Aello, Bikash Yamphu RAI
 
+
+# Split String - split() method
+
+print(d.split(",")) # Output : ['Hello', ' Bikash Yamphu Rai']
+
+
+
+
+
+# String Concatenation - concat() method:
+
+e = "Hello "
+f = "Bikash Yamphu Rai"
+
+print(e + f) # Output : Hello Bikash Yamphu Rai
+g = e + " " + f
+print(g) # Output : Hello Bikash Yamphu Rai
+
+
+
+
+
+# Format String
+
+age = 34   
+txxt = f"My Nmae is John, I am {age} years old."     # F- strings
+print(txxt) # Output : My Nmae is John, I am 34 years old.
+
+
+# Placeholders and Modifiers
+ab = f"The price is {20 * 60 * 60}"
+print(ab) # Output : The price is 72000
+
+
+
+
+
+# Escape Characters
+
+cc = 'it\'s alright'
+print(cc) # Output : it's alright
+
+ddd = "This will insert one \\ (backslash)."
+print(ddd) # Output : This will insert one \ (backslash).
+
+eee = "Hello\nwolrd"
+print(eee) 
