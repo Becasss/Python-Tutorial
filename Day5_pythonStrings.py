@@ -30,4 +30,22 @@ for x in "Banana":
     print(x)
 
 # String Length
-print(len(b)) # Output :
+print(len(b)) # Output :226
+
+
+# Check String
+txt = "The best thigns in life are free"
+print("free" in txt) # Output : True
+
+if "free" in txt:
+    print("Yes, Free is in txt") # Output : False
+else:
+    print("No, Free is not in txt") # Output : True
+
+
+# Check if NOT
+text = "The best things in life are free"
+print("expensive" not in txt) # Output : True
+
+if "expensive" not in txt:
+    print("Yes, Expensive is not in txt") # Output : True
