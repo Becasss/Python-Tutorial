@@ -49,3 +49,44 @@ print("expensive" not in txt) # Output : True
 
 if "expensive" not in txt:
     print("Yes, Expensive is not in txt") # Output : True
+
+
+
+
+
+# Python - Slicing Strings
+
+c = "Hello, world!"
+print(c[2:5]) # Output : llo
+
+
+# Slice from the start:
+print(c[:5]) # Output : Hello
+
+# Slice from the end:
+print(c[2:]) # Output : llo, world
+
+
+# Negative indexing
+print(c[-5:-2]) # Output : orl
+
+
+
+# Python - Modify Strings
+
+d = "  Hello, Bikash Yamphu Rai" # Upper Case - upper()
+print(d.upper()) # Output : HELLO, BIKASH YAMPHU RAI
+
+print(d.lower()) # Output : hello, bikash yamphu rai -- lower case - lower()
+
+
+# Remove Whitespace - strip() method
+
+print(d.strip()) # Output : Hello, BIkash Yamphu Rai
+
+
+
+# Replace String - replace() method
+
+print(d.replace("H", "A"))
+
