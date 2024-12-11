@@ -61,4 +61,26 @@ print(a <= b) # Output : True - Less or Equal Comparison
 
 # Python Logical Operators
 
-print(a < 5 and b < 10)  # Output : 
+print(a < 5 and b < 10)  # Output : True - And Operator
+
+print(a < 5 or b < 10)  # Output : True - Or Operator
+
+print(not (a < 5 and b < 10))  # Output : False - Not Operator
+
+
+
+# Python Identity Operator
+
+b = ["apple", ' banana']
+x = ["apple", "banana"]
+z = b
+
+print(b is z)
+
+# return True because z is the same object as b
+
+print(b is x) 
+# Return False because b is no the same object as x, even if they have the same content
+
+print(b == x)
+# to demonstrate the difference between "is" and "==" : this comparison returns True because x is equal to y
