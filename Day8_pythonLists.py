@@ -83,3 +83,63 @@ print(thislist)  # output : ['apple', 'Blackcurrant', 'cherry']
 thislist1 = ['apple', 'banana', 'cherry', 'orange', 'kiwi','mango']
 thislist1[1:3] = ['blackcurrant', 'watermelon']
 print(thislist1)  # output : ['apple', 'blackcurrant', 'watermelon', 'orange', 'kiwi', 'mango']
+
+
+# Insert Items : insert() method inserts an item at the specified index.
+thislist1.insert(2, 'grape')
+print(thislist1)  # output : ['apple', 'blackcurrant', 'grape', 'watermelon', 'orange', 'kiwi', 'mango']
+
+
+
+
+
+# Python - ADd List Items
+
+# Append Items : append() method inserts an item to the end of the list.
+
+thislist.append("Orange")
+print(thislist) # output : ['apple', 'Blackcurrant', 'cherry', 'mango']
+
+
+# Extend List: 
+thislist.extend(thislist1)
+print(thislist)  # The elemlents will be added to the end of the list.
+
+
+# ADD any Iterable: extend() method does not have to append lists, you can add any iterable object(tuples, sets, dictionaries)
+
+thislst = ["apple", "bannabin", "Cherry"]
+thistuple = ('Kiwi', ' Orange')
+thislst.extend(thistuple)
+print(thislst)  # output : ['apple', 'bannabin', 'Cherry', 'Kiwi', 'Orange']
+
+
+
+
+
+
+# Python - Remove List Items
+
+# Remove Specified Item - remove() method removes specified items.
+
+# Example:
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("apple")
+print(thislist)  # output : ['banana', 'cherry']
+
+
+# Remove Specified Index - pop() method removes the item at the specified index.
+thislst = ['cheerry', "banana", 'orange','mango']
+thislst.pop(1)
+print(thislst)  # Output: ['cherry', "orange", 'mango']
+
+# If you don't specify an index, the pop() method removes the last item from the list.
+
+
+# del keyword - removes the specified index.
+
+del thislst[0]
+print(thislst)
+
+
+# Clear the list - clear() method empties the list.
