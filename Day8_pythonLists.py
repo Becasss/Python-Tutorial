@@ -286,3 +286,63 @@ print(thislist)  # output: ['apple', 'banana', 'cherry', 'brown', 'orange']
 
 thislist.sort(key = str.lower)
 print(thislist)  # output: ['Apple', 'banana', 'Brown','cherry', 'orange']
+
+
+
+# Reverse Order
+thislist.sort(reverse=True)
+print(thislist)  # output: ['orange', 'cherry', 'Brown', 'banana', 'Apple']
+
+thislist.sort(key = str.lower, reverse=True)
+print(thislist)  # output: ['orange', 'cherry', 'Brown', 'banana', 'apple']
+
+
+
+
+
+
+# Copy a list - use the copy() method
+
+thislist = ['apple', 'banana', 'cherry']
+mylist = thislist.copy()
+print(mylist)  # output: ['apple', 'banana', 'cherry']
+
+
+# Use the list() method
+mylist = list(thislist)
+print(mylist)
+
+
+# Use the slice operator
+mylist = thislist[:]
+print(mylist)
+
+
+
+
+
+# Python - Join List 
+# Example: 
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)     # output:["a", "b", "c", 1 , 2, 3]
+
+
+# Example: Append List2 into list1
+
+for x in list2:
+    list1.append(x)
+
+print(list)     # Output: ['a', 'b', 'c', 1,2,3]
+
+
+
+# Extend() method - purpose is to add elements from one list to anther list:
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)     # output: ['a', 'b', 'c', 1, 2, 3]
