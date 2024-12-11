@@ -239,4 +239,50 @@ print(newlist)
 
 
 
-# 
+# Python - Sort Lists
+
+# Sort List Alphabetically - sort() method will sort the list alphabetically, asceding, by default:
+thislist = ['apple', 'banana', 'cherry', 'orange']
+thislist.sort()
+print(thislist)  # output: ['apple', 'banana', 'cherry', 'orange']
+
+
+# Sort the list numerically
+thislist = [1, 100, 50, 32, 56]
+thislist.sort()
+print(thislist)  # output: [1, 32, 50, 56, 100]
+
+
+
+# Sort Descending - use the keyword argument reverse = True:
+thislist = ['apple', 'banana', 'cherry', 'orange']
+thislist.sort(reverse=True)
+print(thislist)  # output: ['orange', 'cherry', 'banana', 'apple']
+
+
+thislist = [1, 34, 55, 89 , 23]
+thislist.sort(reverse=True)
+print(thislist)  # output: [89, 55, 34, 23, 1]
+
+
+
+# Customize Sort Function - Using keyword argument key = function
+
+#example: sort the lsit based on how close the number is to 50.
+
+def myfunc(n):
+    return abs(n - 50)
+
+thislist = [15, 30, 75, 20]
+thislist.sort(key=myfunc)
+print(thislist)  # output: [30, 75, 20, 15]
+
+
+
+# Case Insensitivie Sort 
+thislist = ['Brown', 'orange', 'Cherry', 'banana', 'Apple']
+thislist.sort()
+print(thislist)  # output: ['apple', 'banana', 'cherry', 'brown', 'orange']
+
+thislist.sort(key = str.lower)
+print(thislist)  # output: ['Apple', 'banana', 'Brown','cherry', 'orange']
