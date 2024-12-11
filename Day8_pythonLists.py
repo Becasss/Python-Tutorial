@@ -143,3 +143,100 @@ print(thislst)
 
 
 # Clear the list - clear() method empties the list.
+thislst.clear()
+print(thislst)
+
+
+
+
+
+# Python - Loop Lists
+
+# Loop Through for loop
+thislist = ['apple', ' banana', 'cherry']
+for x in thislist:
+    print(x)
+
+
+# Loop through the index Numbers
+thislist = ['apple', 'banana', 'orange']
+for i in range(len(thislist)):
+    print(thislist[i])
+
+
+# Using while loop
+thislist = ["apple", 'banana', 'cherry']
+i = 0
+while i < len(thislist):
+    print(thislist[i])
+    i = i + 1
+
+
+# Looping Using List Comprehension
+thislist = ['apple', 'banana', 'cherry']
+[print(x) for x in thislist]
+
+
+
+
+# Python - List Comprehension
+
+# List Comprehension - Based on a list of fruits, you want a new list, containing only the fruits with a letter "a" in the name.
+
+# Using For statement.
+fruits = ['apple', 'banana', 'cherry', 'mango','kiwi']
+newlist = []
+
+for x in fruits:
+    if 'a' in x:
+        newlist.append(x)
+print(newlist)  # output: ["apple", 'banana', "mango"]
+
+
+# Using List Comprehension.
+fruits = ["apple", "banana",'cherry', "orange"]
+newlist = [x for x in fruits if 'a' in x]
+print(newlist)  # output: ["apple", 'banana', "mango"]
+
+
+# Syntax: newlist = [exprssion for item in iterable if condition == True]
+
+# Codition is like a filter that only accepts the items that values to True.
+# Example:
+fruits = ['apple', 'banana', 'cherry', 'orange']
+newlist = [x for x in fruits if x != "apple"]
+print(newlist)  # output: ['banana', 'cherry', 'orange']
+
+
+# Iterable: can be any iterable object, like a list, tuple, set, etc.
+newlist = [x for x in range(10)]
+print(newlist)  # output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+# Same example but with a condition: Only accepts numbers lower than 5.
+
+newlist = [x for x in range(10) if x < 5]
+print(newlist)  # output: [0, 1, 2, 3, 4]
+
+
+
+# Expression:
+fruits = ['apple', 'banana', 'cherry']
+newlist = [x.upper() for x in fruits]
+print(newlist)  # output: ['APPLE', 'BANANA', 'CHERRY']
+
+
+vegetables = ["magno", 'Juice', 'Orange']
+newlist = ['hello' for x in fruits]   # Set all values in the newlist to  'hello'
+print(newlist)  # output: ['hello', 'hello', 'hello']
+
+
+fruits = ['apple', 'banana', ' cherry', 'Kiwiw', "mango"]   
+newlist = [x if x != "banana" else "orange" for x in fruits]    # Return "Orange" instead of "banana"
+print(newlist)
+
+
+
+
+
+# 
