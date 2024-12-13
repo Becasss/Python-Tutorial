@@ -172,3 +172,45 @@ x = {"a", "b", "c"}
 y = {"d", "e", "f"}
 x.update(y)
 print(x)
+
+# Both the union() and the update() methods will exclude any duplicates items.
+
+
+# Intersection - Keep Only  the duplicates
+set1 = {"a", "b", "c", "c"}
+set2 = {1, 2, 3, "c"}
+set3 = set1.intersection(set2)
+print(set3)  # Output: c
+
+
+set4 = set1 & set2
+print(set4) # Output:c
+
+
+# intersection_update() method
+
+set1 = {"a", "b", "c", "d"}
+set2 = {1, 2, 3, "c"}
+
+set1.intersection_update(set2)
+print(set1) # Output: c
+
+
+
+# Difference() - return new set that will contain only the items from the first set that are not present in other set.
+set1 = {"a", "b", "c", "d"}
+set2 = {1, 2, 3, "c"}
+set3 = set1.difference(set2)
+print(set3)  # Output: a, b, d
+
+
+set4 = set1 - set2
+print(set4) # Output: a, b, d
+
+
+
+# Symmetric difference
+set1 = {"a", "b", "c", "d"}
+set2 = {1, 2, 3, "c"}
+set3 = set1.symmetric_difference(set2)
+print(set3)  # Output: a, b, d, 1, 2, 3
