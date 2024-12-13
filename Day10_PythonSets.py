@@ -56,3 +56,15 @@ print("banana" not in thisset)
 thisset = {"apple", "Orange", "Cherry"}
 thisset.add("kiwi")
 print(thisset)
+
+
+
+
+# Add sets: To add items form another set into the current set, usse the update() method.
+
+thisset = {'apple', 'banana', 'cherry'}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)
+
+print(thisset)
