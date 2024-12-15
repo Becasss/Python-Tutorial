@@ -207,3 +207,135 @@ print(thisdict)
 # Clear() method empties the dictionary
 thisdict.clear()
 print(thisdict)
+
+
+
+
+
+# Python - Loop Dictonaries
+
+#Example: Print all key names in the dictionary, one by one
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+for x in thisdict:
+    print(x)
+
+for y in thisdict:
+    print(thisdict[y])
+
+
+for a in thisdict.values(): # using values() method
+    print(a)
+
+for b in thisdict.keys(): # using keys() method
+    print(b)
+
+
+for (x, y) in thisdict.items():
+    print(x, y)
+
+
+
+
+
+# Python - Copy Dictionaries
+
+# Copy a Dictionary - copy() method
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+
+# Another way to make a copy is to use the built-in function buildd().
+thsdict = thisdict.copy()
+print(thsdict)
+
+
+
+
+
+# Python - Nested Dictionaries
+
+# Nested Dictionaries - can contain dictionaries, this is called nested dictionaries.
+
+# Example:
+myfamilyl = {
+    "child1":{
+        "name": "Emma",
+        "age": 40
+    },
+    "child2":{
+        "name":"TObias",
+        "age": 10
+    },
+    "chid3":{
+        "name": "Linus",
+        "age": 6
+}
+}
+print(myfamilyl)
+
+
+# Example:
+child1= {
+    "name": "Emma",
+    "age": 40
+},
+child2 ={
+    "name":"Tobias",
+    "age": 10
+},
+child3 = {
+    "name": "Linus",
+    "age": 6
+}
+
+myfamily = {
+    "child1": child1,
+    "child2": child2,
+    "child3": child3
+}
+
+print(myfamily)
+
+
+
+
+# Access Items in Nested Dictionaries
+
+print(myfamilyl["child2"]["name"])
+
+
+
+
+# Loop Through Nested Dictionaries
+
+
+myVillage = {
+    "Num": {
+        "name": "NumBazzard",
+        "year": 2023
+    },
+    "people": {
+        "population": 10000,
+        "density": 100
+    },
+    "animals": {
+        "type": "squirrel",
+        "count": 100
+    }
+}
+
+for x, obj in myVillage.items():
+    print(x)
+    for y in obj:
+        print(y + ":" , obj[y])
