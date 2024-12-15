@@ -178,3 +178,32 @@ thisdict = {
 
 thisdict.update({"color": "Red"})
 print(thisdict) # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'color': 'Red'}
+
+
+# Remove Items - pop() - will remove the item with the specified key name:
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 2020,
+    "color": "Red"
+}
+thisdict.pop("model")
+print(thisdict) # Output: {'brand': 'Ford', 'year': 2020, 'color': 'Red'}
+
+
+
+# del() keyword removes the item with the specified key name:
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 2020,
+    "color": "Red"
+}
+del thisdict["model"]
+print(thisdict)
+
+
+# Clear() method empties the dictionary
+thisdict.clear()
+print(thisdict)
