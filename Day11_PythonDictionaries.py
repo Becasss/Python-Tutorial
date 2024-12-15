@@ -38,3 +38,34 @@ print(len(thisdict)) # Output: 3
 # type() function
 
 print(type(thisdict)) # Output: dict
+
+
+# the dict() Constructor function
+
+mydict = dict(name = "John", age =34, country = "United States")
+print(mydict) # Output:{'name':'John', 'age':34, 'country':'United States'}
+
+
+
+# Python - Accessing Dictionary Items
+
+# Accessing Items - by refering to its key name, inside square brackets.
+
+thisdict = {
+    "name": "John",
+    "age": 34,
+    "city": "New York"
+}
+
+x = thisdict['city']
+print(x)  # Output: "New York"
+
+
+# There is also a method called get() that will give you the same result.
+
+y = thisdict['name']
+print(y) # Output: "John"
+
+
+
+
