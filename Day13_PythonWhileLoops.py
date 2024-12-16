@@ -29,3 +29,13 @@ while i < 6:
     if i == 3:
         continue
     print(i)
+
+
+# Else Statement: can run a block of code once when the condition no longer is true.
+
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 5")
