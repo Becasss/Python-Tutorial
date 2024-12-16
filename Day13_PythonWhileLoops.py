@@ -10,3 +10,15 @@ while i < 6:
     i += 1
 
 
+# Break Statement: can stop loop even if the while condition is true.
+
+
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+
+
+# Continue Statement: can stop the current iteration and continue with the next.
