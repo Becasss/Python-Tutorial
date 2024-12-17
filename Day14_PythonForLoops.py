@@ -26,3 +26,20 @@ for x in fruits:
     print(x)
     if x == "banana":
         break
+
+
+# The continue statement
+
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
+
+
+
+# The Range Function: To loop through a set of code a specific number of times.
+
+for x in range(6):
+    print(x)
