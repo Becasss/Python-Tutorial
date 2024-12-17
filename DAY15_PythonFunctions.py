@@ -62,3 +62,16 @@ def myFunction(**kids):
     print("THe youngest child is " + kids['lname'])
 
 myFunction(fname = "B Ikash", lname = "Rai")
+
+
+
+
+# Default Parameter Value: 
+
+def myFUnction(country = "Nepal"):
+    print(f"I am from {country}.")
+
+myFUnction("Sweden")
+myFUnction("Romania")
+myFUnction()  # The default value will be used in this case.  # Output : I am from Nepal.
+myFUnction("Switzerland")
