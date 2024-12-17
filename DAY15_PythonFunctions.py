@@ -75,3 +75,13 @@ myFUnction("Sweden")
 myFUnction("Romania")
 myFUnction()  # The default value will be used in this case.  # Output : I am from Nepal.
 myFUnction("Switzerland")
+
+
+# Passing a List as an Argument
+
+def myFunction(food):
+    for x in food:
+        print(x)
+
+fruits = ["apple", "banana", "cherry"]
+myFunction(fruits)
