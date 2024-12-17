@@ -43,3 +43,9 @@ for x in fruits:
 
 for x in range(6):
     print(x)
+
+
+for z in range(2, 10):
+    print(z) # Output : between 2 to 9.
+
+    
