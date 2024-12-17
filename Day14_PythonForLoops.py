@@ -68,4 +68,10 @@ fruits = ['apple', 'banana', 'cherry']
 for x in adj:
     for y in fruits:
         print(x, y)
-        
+    
+
+# THe PAss Statement - 
+
+for x in [0,1,2]:
+    pass  
+# use pass statement to avoid getting an error when the loop is empty
