@@ -41,10 +41,10 @@ myFunction("Bikash", "Yamphu Rai")
 
 # Arbitary ARguments, *args
 
-def myfunction(*kids):
-    print("the Youngest chid is: " + kids[2])
+def myfction(*kids):
+    print("the Youngest chid is: " + kids[1])
 
-myfunction("Bikash", "Kiran", "Bikram")
+myfction("Bikash", "Kiran", "Bikram")
 
 
 
@@ -93,6 +93,40 @@ myFunction(fruits)
 def myFunction(x):
     return 5 * x
 
-print(myfunction(2))    # Output : 10
-print(myfunction(8)) # Output : 40
-print(myfunction(5)) # Output : 25
+print(myFunction(2))    # Output : 10
+print(myFunction(5)) # Output : 25
+
+
+# The Pass Statement 
+def myFunction(x):
+    pass    # Having a empty function definition  like this, would raise an error without pass statement.
+
+
+# Position - ONly Arguments
+def myPosition(x, /):
+    print(f"the position is {x}.")
+myPosition(10)  # Output : 10
+
+
+
+# Combine Position - only and keyword - only
+
+def my_function(a,b,/, *, c, d):
+    print(a + b + c + d)
+
+my_function(1, 2, c=3, d=4)  # Output : 10
+
+
+
+# Recursion - which means defined function can call itself.
+
+def tri_recrusion(k):
+    if(k > 0):
+        result = k + tri_recrusion(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
+print("Recursion Example Results:")
+tri_recrusion(6)
