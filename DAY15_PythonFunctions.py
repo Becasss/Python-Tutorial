@@ -54,3 +54,11 @@ def myFunction(child1, child2, child3):
     print("THe youngest child is " + child3)
 
 myFunction(child1 = "Emil", child2 = "Bkash", child3 = "Kiran")
+
+
+# Arbitary Keyword Arguments, **Kwargs
+
+def myFunction(**kids):
+    print("THe youngest child is " + kids['lname'])
+
+myFunction(fname = "B Ikash", lname = "Rai")
