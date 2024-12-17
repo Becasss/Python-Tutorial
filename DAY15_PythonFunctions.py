@@ -34,6 +34,23 @@ myFunction("Bikram")
 
 def myFunction(fname, lname):
     print(fname + " " + lname)
-    
+
 myFunction("Bikash", "Yamphu Rai")
 
+
+
+# Arbitary ARguments, *args
+
+def myfunction(*kids):
+    print("the Youngest chid is: " + kids[2])
+
+myfunction("Bikash", "Kiran", "Bikram")
+
+
+
+# Keyword Arguments : can send arguments with the key = value syntax.
+
+def myFunction(child1, child2, child3):
+    print("THe youngest child is " + child3)
+
+myFunction(child1 = "Emil", child2 = "Bkash", child3 = "Kiran")
