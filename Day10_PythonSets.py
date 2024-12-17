@@ -214,3 +214,4 @@ set1 = {"a", "b", "c", "d"}
 set2 = {1, 2, 3, "c"}
 set3 = set1.symmetric_difference(set2)
 print(set3)  # Output: a, b, d, 1, 2, 3
+
