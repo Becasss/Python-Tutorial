@@ -48,4 +48,14 @@ for x in range(6):
 for z in range(2, 10):
     print(z) # Output : between 2 to 9.
 
+
+
+
+
+# Else in For Loop: else keyword in a for loop specifies a block of code to be executed when the loop is finished.
+
+for x in range(6):
+    print(x)
+else:
+    print("Finally finished!")
     
