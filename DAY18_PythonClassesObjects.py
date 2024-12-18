@@ -118,3 +118,46 @@ p1 = Person("John", 23)
 
 p1.age = 22
 print(p1.age)
+
+
+
+# Delete Object Properties:
+
+# Example: Delete the age property form the P1 object.
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print(f"Hello my name is {self.name}")
+
+p1 = Person("John", 23)
+
+del p1.age
+
+print(p1.age)
+
+
+
+# Delete Objects:
+
+class Person:
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print(f"Hello my name is {self.name}")
+
+p2 = Person("John",23)
+
+del p2
+print(p2)
+
+
+
+
+# The Pass Statement
+class Person:
+    pass
+# having an empty class definition like this, would raise an error without the pass statement.
