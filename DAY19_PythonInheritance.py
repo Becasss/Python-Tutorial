@@ -111,3 +111,24 @@ class Student(Person):
 
 x = Student("Mike", "Tyson")
 print(x.graduationyear)
+
+
+# Example: Add a year parameter and pass the correct year when creating objects.
+
+class Person:
+    def __init__(self,fname,lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printnam(self):
+        print(self.firstname, self.lastname)    
+
+
+class Student(Person):
+    def __init__(self,fname,lname,year):
+        super().__init__(fname,lname, year)
+        self.graduationyear = year
+
+x = Student("Mike", "Olsen", 2089)
+print(x.graduationyear)
+
+
