@@ -26,7 +26,19 @@ print(next(myit)) # Output : n
 print(next(myit)) # Output : a
 print(next(myit)) # Output : n
 print(next(myit)) # Output : a
-print(next(myit)) # Output : None (as there are no more characters in the string)
+# print(next(myit)) # Output : None (as there are no more characters in the string)
 
 
+# Loopig through an interator
 
+# Example: Iterator the values of a tuple
+mytuple = ("apple", "orange", "cherry")
+
+for x in mytuple:
+    print(x)
+
+
+# Iterate the characters of a string
+mystr = "banana" 
+for x in mystr:
+    print(x)
