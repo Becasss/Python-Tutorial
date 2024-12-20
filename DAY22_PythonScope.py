@@ -36,3 +36,18 @@ def myfunc():
 myfunc()
 
 print(x)
+
+
+# Naming Variables:
+
+# Example: The function will print the local z and then the code will print the global z:
+
+z = 34
+
+def myfnc():
+    z = 600
+    print(f"The inside varaible is {z}")
+
+myfunc()
+          
+print(z)
