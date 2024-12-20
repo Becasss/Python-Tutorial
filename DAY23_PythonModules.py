@@ -51,3 +51,11 @@ import platform
 x = dir(platform)
 
 print(x)
+
+
+# Note: The dir() function can be used on all modules, also the ones you create yourself.
+
+
+# Import From Module: 
+from mymodule import person1
+print(person1["name"])
