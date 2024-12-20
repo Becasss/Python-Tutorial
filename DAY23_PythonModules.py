@@ -19,4 +19,20 @@ mymodule.greeting("Jonathan")
 
 
 
+# Variables in Module
+
+import mymodule
+a = mymodule.person1["age"]
+print(a)  # Output: 30
+
+
+
+# Naming a Module : Re-naming a Module 
+
+import mymodule as mx
+mx.greeting("Jane")
+
+
+# Built-in Modules
+
 # 
