@@ -51,3 +51,18 @@ def myfnc():
 myfunc()
           
 print(z)
+
+
+
+# Global keyword - if you need to create a global variable but are stuck in the lcoal scope, you can use the global keyword.
+
+
+def myfunc():
+    global a
+    a = 89
+myfunc()
+print(a)
+
+
+
+# 
