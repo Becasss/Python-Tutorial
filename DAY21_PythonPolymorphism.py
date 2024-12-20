@@ -98,4 +98,7 @@ plane1 = Plane("Boeing", "747")  # Create a Plane object
 for x in (car1, boat1, plane1):
     print(x.brand)
     print(x.model)
+
+
+    
     x.move()  # Output: Ford, Mustang, Move, Ibiza, Touring 20, Sail, Boeing, 747, Fly  
