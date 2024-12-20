@@ -65,4 +65,15 @@ print(a)
 
 
 
-# 
+# Nonlocal Keyword = is used to work with variables inside nested functions.
+
+def myfunc():
+    x = "Jane Doe"
+    def myfunc2():
+        nonlocal x
+        x = "Alice"
+        print("Inside myfunc2 : ", x)
+        myfunc2()
+        return x
+
+print(myfunc())
