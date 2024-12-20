@@ -35,4 +35,19 @@ mx.greeting("Jane")
 
 # Built-in Modules
 
-# 
+# Import and use the platform module.
+
+import platform
+x = platform.system()
+
+print(x) # Output:windows
+
+
+
+# Using the dir() function
+
+# Example: List all the defined names belonging to the platform module.
+import platform
+x = dir(platform)
+
+print(x)
