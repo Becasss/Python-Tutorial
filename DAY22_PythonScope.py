@@ -8,3 +8,16 @@ def myFunct():
     print(x)
 
 myFunct()
+
+
+
+# Function inside Function 
+
+# Example: the local variable can be accessed from a function within a function:
+
+def myfunc():
+    x = 89
+    def myinnerfunc():
+        print(x)
+    myinnerfunc()
+myfunc()
