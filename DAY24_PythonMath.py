@@ -11,3 +11,18 @@ print(x)
 print(y)
 
 # The abs() function returns the absolute (positive) value of the specified number.
+
+# Example
+x = abs(-5.23)
+print(x)        # Output : 5.23
+
+
+
+
+# The pow(x,y) function returns the value of x to the power of y.
+
+# Example: Return the value of 4 to the power of 5.
+x = pow(4,5)
+print(x)        # Output : 1024
+
+
