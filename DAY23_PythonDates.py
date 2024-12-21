@@ -17,3 +17,13 @@ import datetime
 x = datetime.datetime.now()
 print(x.year)
 print(x.strftime("%A"))
+
+
+
+
+# Creating Date Objects: we can use datetime() class(constructor) of the datetime module.
+
+import datetime
+x = datetime.datetime(2020, 4, 23)
+
+print(x)
