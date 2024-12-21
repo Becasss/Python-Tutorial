@@ -27,3 +27,13 @@ import datetime
 x = datetime.datetime(2020, 4, 23)
 
 print(x)
+
+
+
+# The strftime() Method - the datetime object has a method for formating date objects into readable strings.
+
+# Example: Display the name of the month.
+import datetime
+x = datetime.datetime(2019, 8, 2)
+
+print(x.strftime("%A"))
