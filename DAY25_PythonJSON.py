@@ -41,3 +41,32 @@ print(json.dumps(31.76))
 print(json.dumps(True))
 print(json.dumps(False))
 print(json.dumps(None))
+
+
+
+# Example: Convert a Python object containing all the legal data types.
+
+import json
+x = {
+    "name": "John",
+    "age": 20,
+    "married" : True,
+    "divorced" : False,
+    "children" : ("Bikash", "Bishal"),
+    "pets" : None,
+    "cars": [{"model": "BMW 230","mpg": 27.5},
+             {"model": "Ford Edge", "mpg": 24.1}
+             ]
+             }
+
+
+# Convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)
+
+
+
+
+
