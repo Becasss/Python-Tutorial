@@ -26,3 +26,33 @@ x = pow(4,5)
 print(x)        # Output : 1024
 
 
+
+# Math Module: 
+
+# math.sqrt() method - returns the square root of a number.
+
+import math
+x = math.sqrt(64)
+print(x)        # Output : 8.0
+
+
+
+# math.ceil() method - rounds a number upwards to its nearest integer.
+# math.floor() method rounds a number downwards to its nearest integer.
+
+# Example: 
+import math
+
+x = math.ceil(1.4)
+y = math.floor(1.4)
+
+print(x)        # Output : 2
+print(y)        # Output : 1
+
+
+
+# math.pi constant, returns the value of PI(3.14)
+
+import math
+x = math.pi
+print(x)        # Output : 3.141592653589793
