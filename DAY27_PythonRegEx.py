@@ -61,3 +61,25 @@ txt = "The rain in Spanish"
 
 x = re.search("Portugal", txt)
 print(x) # Output: []
+
+
+
+# The Split() FUnction - returns a list where the string has been split at each match.
+
+# Split at each white-space character
+import re
+txt = "The rain in spanish"
+x = re.split("\s", txt)
+print(x)        # Output: ['The', 'rain', 'in', 'spanish']
+
+
+
+# Example: Splt the string only at the first occurrence.
+
+import re
+
+# split the string at the first white-space character
+
+txt = "The rain in spanish"
+x = re.split("\s", txt, 1)
+print(x)
