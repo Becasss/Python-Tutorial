@@ -21,3 +21,8 @@ print(c.hump(txt))
 
 
 # Remove a package - pip uninstall camelcase
+
+
+
+# List Packages - pip list
+
