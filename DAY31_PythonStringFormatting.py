@@ -49,3 +49,23 @@ price = 49
 txt  = f"It is very {"Expensive" if price > 50 else "cheap"}."
 
 print(txt)
+
+
+
+# Execute Functions in F - strings.
+
+# Example: use the string method upper() to convert a value into upper case letters.
+fruit = "apples"
+
+txt = f"I love {fruit.upper()}."
+print(txt)  # Output : I love APPLES.
+
+
+
+# Create a function that converts feet into meters.
+
+def myconverter(x):
+    return x * 0.3048
+
+txt = f"the plane is flying at a {myconverter(30000)} meter altitude."
+print(txt)  # Output : the plane is flying at a 9144.0 meters altitude.
