@@ -69,3 +69,19 @@ def myconverter(x):
 
 txt = f"the plane is flying at a {myconverter(30000)} meter altitude."
 print(txt)  # Output : the plane is flying at a 9144.0 meters altitude.
+
+
+
+# String format()
+
+# Example: add a placehoder where you want to display the price.
+price = 50
+txt = "the price is {} dollars."
+
+print(txt.format(price))
+
+
+# Format the price to be displayed as a number with two decimals.
+
+txt = "the price is {:.2f} dollars."
+print(txt.format(price))
