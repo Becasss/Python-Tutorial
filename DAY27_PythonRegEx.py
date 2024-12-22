@@ -35,3 +35,29 @@ txt = "THe rain in Spain"
 x = re.findall("ai", txt)
 print(x)        # Output: ['ai', 'ai']
 
+
+# Example: Return an empty list if no match was found.
+import re
+txt = "The rain in spain"
+x = re.findall("Portugal", txt)
+print(x)        # Output: []
+
+
+
+# The Search() FUnction - searches the string for a match, and retuns a Match object if there is a match.
+
+# Example: Search for the first white-space character in the string.
+import re
+txt = "THe rain in Spain"
+x = re.search("\s", txt)
+
+print("The first white-space character is located in position:",x.start())
+
+
+# Example: Make a search that returns no match.
+
+import re
+txt = "The rain in Spanish"
+
+x = re.search("Portugal", txt)
+print(x) # Output: []
