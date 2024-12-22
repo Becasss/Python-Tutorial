@@ -83,3 +83,79 @@ import re
 txt = "The rain in spanish"
 x = re.split("\s", txt, 1)
 print(x)
+
+
+
+# THe sub() Function - replaces the matches with the text of your choice.
+
+# Example: Replace every white-space character with the number 9.
+import re
+
+txt = "The rain in spanish"
+
+x = re.sub("\s", "9", txt)
+print(x)
+
+
+# count parameter
+
+# Example: replace the first 2 occurrences
+
+import re
+# Replace the first two occurrences of a white-space character with the digit 9.
+
+txt = "The rain in spanish"
+x = re.sub("\s", "9", txt, 2)
+
+print(x)        #Output : The9rain9in Spanish
+
+
+
+# Math Object - is an object containing information about the search and the result.
+
+# Example: Do a search that will return a Math Object
+import re
+
+# The search () function returns a Match Object.
+
+txt = "The rain in Spain"
+
+x = re.search("ai", txt)
+print(x)
+
+
+
+
+
+# Example: .span() returns a tuple object the start-, and end positions of the match
+import re
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+
+print(x.span())  # Output: (12, 17)
+
+
+
+
+# .string returns the string passed into the fuction.
+
+import re
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.string)  # Output: The rain in Spain
+
+
+# .group() returns a the part of the string where there was a match.
+
+import re
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group()) # Output: Spain
+
+
+
+
+
+# Note : If there is no match, the value None is returned, instead of the Match Object.
