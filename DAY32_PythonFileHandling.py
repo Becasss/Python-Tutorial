@@ -26,3 +26,26 @@ print(f.read())
 f = open("mymodule.py", "r")
 
 print(f.read(10))
+
+
+
+
+# Read Lines - readline() method.
+
+# Example: Read one line of the file:
+f = open("mymodule.py", "r")
+
+print(f.readline())
+
+
+
+#Example: Loop through the file by line.
+f = open("mymodule.py", "r")
+
+for x in f:
+    print(x)
+
+
+
+
+
