@@ -114,4 +114,33 @@ f = open("myfile.txt", "w")
 
 # Python Delete Files: To delete a file, you must import the OS module, and run its os.remove() function:
 
-# Example:
+# Example:Remove a file called "myfile.txt"
+import os
+
+os.remove("myfile.txt")
+
+
+
+
+# Check if file exist:
+
+
+# Check if file exists, then delete it:
+
+import os
+if os.path.exists(myfile.txt):
+    os.remove(myfile.txt)
+else:
+    print("The file does not exist.")
+
+
+
+# Delete Folder: To delete an entire folder, use the os.rmdir() method:
+
+
+# Example: Remove a folder called "myfolder"
+import os
+os.rmdir("myfolder")
+
+
+# Note: You can only remove empty folders.
