@@ -49,3 +49,10 @@ for x in f:
 
 
 
+# Close File - It is a good practice to always close the file when you are done with it.
+
+# Example: Close the file when you are finished with it.
+f = open("mymodule.py", "r")
+
+print(f.readline())
+f.close()
