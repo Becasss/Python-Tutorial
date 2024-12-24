@@ -17,7 +17,7 @@ import pandas as pd
 
 mydataset = {
     'cars': ["BMW", "Volvo", "Ford"],
-    'passings': [4, 5, 6, 6]
+    'passings': [4, 5, 6]
 
 }
 
