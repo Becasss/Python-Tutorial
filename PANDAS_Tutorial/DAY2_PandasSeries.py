@@ -14,3 +14,17 @@ print(myvar)
 # Labels
 # Example: Return the first value of the series:
 print(myvar[0])  # Output: 1
+
+
+
+# Create labels - with index argument, you can name your own labels.
+
+# Example: create your own labels:
+
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a, index = ["x", "y", "z"])
+
+print(myvar)
