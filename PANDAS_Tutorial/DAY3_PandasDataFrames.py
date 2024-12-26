@@ -62,8 +62,3 @@ print(df.loc['day1'])        # loc attribute - refer to the named index.
 
 # Example: Load a comma separated file (csv file) into a DataFrame:
 
-import pandas as pd
-
-df = pd.read_csv('example.csv')
-
-print(df)
