@@ -44,3 +44,26 @@ data = {
 df = pd.DataFrame(data, index = ['day1', 'day2', 'day3'])
 
 print(df)
+
+
+
+
+
+
+# Locate named indexes - loc attribute
+
+print(df.loc['day1'])        # loc attribute - refer to the named index.
+
+
+
+
+# Load Files Into a DataFrame - if your data sets are stored in a file, Pandas can load them into a DataFrame.
+
+
+# Example: Load a comma separated file (csv file) into a DataFrame:
+
+import pandas as pd
+
+df = pd.read_csv('example.csv')
+
+print(df)
