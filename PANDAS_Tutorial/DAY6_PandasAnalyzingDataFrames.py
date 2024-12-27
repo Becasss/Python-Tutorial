@@ -13,3 +13,16 @@ df = pd.read_csv('data.csv')
 
 print(df.head(10))
 
+
+
+# Example: Print the first 5 rows of the DataFrame:
+
+import pandas as pd
+df = pd.read_csv('data.csv')
+
+print(df.head())
+
+
+
+
+# 
