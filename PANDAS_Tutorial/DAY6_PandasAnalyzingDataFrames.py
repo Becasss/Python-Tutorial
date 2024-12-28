@@ -25,4 +25,27 @@ print(df.head())
 
 
 
-# 
+# tail() method - for viewing the last rows of the DataFrame.
+
+
+# Example: Print the last 5 rows of the DataFrame:
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df.tail())
+
+
+
+
+# Info About the Data - info() method give you more information about the dataset.
+
+
+
+# Example: Print the information about the data:
+
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df.info())
