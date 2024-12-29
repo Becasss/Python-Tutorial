@@ -96,3 +96,30 @@ print(df.to_string())
 # Mean = the average value (the sum of all values divided by number of values).
 
 
+# Example: Calculate the Median and replace any empty values with it:
+
+import pandas as pd
+df = pd.read_csv('data.csv')
+
+x = df['Calories'].median()
+
+df['Calories'].fillna(x, inplace=True)
+
+print(df.to_string())
+
+# Median = the value in the middle, after you have sorted all values ascending.
+
+
+
+# Example: calculate the MODE, and replace any emtpy values with it.
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+x = df['Calories'].mode([0])
+
+
+df['Calories'].fillna(x, inplace=True)
+
+
+# Mode = value that appears most frequently.
