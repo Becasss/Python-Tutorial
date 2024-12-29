@@ -58,3 +58,41 @@ df.fillna(130, inplace = True)
 print(df.to_string())
 
 # Notice in the result: empty cells got the value 130 (in row 18, 22, and 28).
+
+
+
+
+# Replace Only For specified Columns
+
+# Example : Replace NULL values in the "Calories" column with the number 130:
+
+import pandas as pd
+df = pd.read_csv('data.csv')
+
+df['Calories'].fillna(130, inplace = True)
+
+print(df.to_string())
+
+# This operation inserts 130 in emtpy cells in the "Calories" column (row 18 and 28).
+
+
+
+# Replace Using Mean, Median and Mode
+
+# Pandas uses the mean(), median() and mode() methods to calculate the respectie values for s specified columns.
+
+# Example: Calculate Mean, and replace any empty values with it:
+import pandas as pd
+df = pd.read_csv('data.csv')
+
+x = df['Calories'].mean()
+
+df['Calories'].fillna(x, inplace=True)
+
+print(df.to_string())
+
+
+# As you can see in row 18 and 28, the empty values form "Calories" was replace with the mean: 304.68
+# Mean = the average value (the sum of all values divided by number of values).
+
+
