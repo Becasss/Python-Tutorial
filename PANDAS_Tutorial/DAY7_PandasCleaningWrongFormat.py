@@ -18,3 +18,25 @@ df['Date'] = pd.to_datetime(df['Date'])
 df.dropna(subset=['Date'], inplace = True)
 
 print(df.to_string())
+
+
+
+# Cleaning Wrong Data - Wrong data does not have to be emtpy cells or wrong format
+# it can just be wrong, like if someone registered "199" instead of "1.99"
+
+
+# Replacing Values - One way to fix wrong values is to replace them with something else.
+
+# Set "Duration"  = 45 in row 7
+import pandas as pd
+df = pd.read_csv('data.csv')
+
+df.loc[7,'Duration'] = 45
+
+print(df.to_string())
+
+
+
+
+
+#
