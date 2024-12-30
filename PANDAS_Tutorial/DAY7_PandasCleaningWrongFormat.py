@@ -74,4 +74,27 @@ print(df.to_string())
 
 
 
+# Pandas - Removing Duplicates
 
+# Discovering Duplicates - duplicate() method
+
+
+# Example : Returns True for every row that is a duplicate, otherwise False:
+
+import pandas as pd
+df = pd.read_csv('data.csv')
+print(df.duplicated())
+
+
+
+
+# Remving Duplicates - drop_duplicates() method
+
+import pandas as pd
+df = pd.read_csv('data.csv')
+df.drop_duplicates(inplace = True)
+print(df.to_string())
+
+
+
+# Notice that row 12 has been removed from the result.
