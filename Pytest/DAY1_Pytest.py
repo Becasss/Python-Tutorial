@@ -8,4 +8,32 @@
 4. Compatibility: Works well Selenium, Requests, and other QA tools.
 
 
-# Installing Pytest:'''
+# Installing Pytest:
+
+'''
+
+
+# Writingt Test Cases
+
+# Basic Test case - A Pytest test case is just a Python function prefixed with test_:
+'''
+def test_addition():
+    assert 1 + 2 == 3
+
+'''
+
+
+# Running Tests - Run the test case using the pytest command:
+
+
+'''
+pytest DAY1_Pytest.py
+'''
+
+
+
+# Key Pytest Features for QA
+
+# 1. Asssertions - use python's assert keyword for validationg test results:
+
+'''def test_string_contains()'''
