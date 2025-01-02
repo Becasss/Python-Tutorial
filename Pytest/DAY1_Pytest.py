@@ -70,3 +70,44 @@ def test_login(sample_data):
         
     def test_subtraction(self):
         assert 5 - 3 == 2"""
+
+
+
+# Run test in a specific class:
+
+'''pytest -k TestMathOperations'''
+
+
+
+
+# 5. Marking Test: Tag tests for selective execution.
+
+'''import pytest
+
+@pytest.mark.smoke
+def test_critical_feature():
+    assert True
+    
+    
+@pytest.mark.regression
+def test_minor_feature():
+    assert True
+    '''
+
+# Run only smoke tests: pytest -m smoke
+
+
+# Pytest with Selenium (example)- Pytest works seamlessly with Selenium for web automation.
+
+"""form selenium import webdriver
+
+@pytest.fixture
+def browser():
+
+driver = webdriver.chrome()
+yield driver
+driver.quit()
+
+def test_google_search(browser):
+browser.get('https://www.google.com')
+assert "Google" in browser.title"""
