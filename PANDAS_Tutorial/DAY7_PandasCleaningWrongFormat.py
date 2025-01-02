@@ -88,7 +88,7 @@ print(df.duplicated())
 
 
 
-# Remving Duplicates - drop_duplicates() method
+# Rem0ving Duplicates - drop_duplicates() method
 
 import pandas as pd
 df = pd.read_csv('data.csv')
