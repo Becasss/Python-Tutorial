@@ -8,19 +8,18 @@
 4. Compatibility: Works well Selenium, Requests, and other QA tools.
 
 
-# Installing Pytest:
-
 '''
+
+# Installing Pytest:pip install pytest
+
 
 
 # Writingt Test Cases
 
 # Basic Test case - A Pytest test case is just a Python function prefixed with test_:
-'''
-def test_addition():
+'''def test_addition():
     assert 1 + 2 == 3
-
-'''
+    '''
 
 
 # Running Tests - Run the test case using the pytest command:
@@ -36,4 +35,38 @@ pytest DAY1_Pytest.py
 
 # 1. Asssertions - use python's assert keyword for validationg test results:
 
-'''def test_string_contains()'''
+''' def test_string_contains():
+        assert "QA" in "Quality Assurance"
+        
+        '''
+
+# 2. Parameterized Testing: Test the same function with multiple inputs:
+
+"""import pytest
+
+@pytest.mark.parametrize("input,expected", [(2,4), (3,9), (4,16])
+def test_square(input,expected):
+    assert input**2 == expected
+    """
+
+
+# 3. Fixtures: Fixtures manage test setup and teardown.
+
+"""import pytest
+@pytest.fixture
+def sample_data():
+    return {"surname": "test_user", "password": "secured_password}
+    
+def test_login(sample_data):
+    assert sample_data["username"] == "test_user"""
+
+
+# 4. Grouping Test : Organize related test into classes.
+
+"""class TestMathOperations:
+
+    def test_addition(self):
+        assert 1 + 2 == 3
+        
+    def test_subtraction(self):
+        assert 5 - 3 == 2"""
