@@ -16,7 +16,7 @@
 
 # Writingt Test Cases
 
-# Basic Test case - A Pytest test case is just a Python function prefixed with test_:
+# Basic Test case - A Pytest test case is just a Python function prefixed with test:
 '''def test_addition():
     assert 1 + 2 == 3
     '''
